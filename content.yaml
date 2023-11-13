@@ -1,0 +1,75 @@
+about:
+  about_me: |
+    <p>
+    Hello! I'm Szymon Dziwak, a passionate and creative software developer.
+    At my current workplace I program in Java. I have two years of professional experience with Java, but have been learning to program as a hobby for 10 years.
+    I am interested in creating high performance software. I am especially interested in Rust and Go, but I am not afraid of C and C++.
+    This page is mainly about my Rust and Go projects because it is my long-term goal to find Rust or Go related job.
+    If you want to see all my skills and projects ask me for CV or see my GitHub page.
+    </p>
+  skills:
+    - name: Java
+      content: I program in Java at work 
+    - name: PostgreSQL
+      content: I used it for work for two years
+    - name: Rust
+      content: I've been learning Rust for two years 
+    - name: C++
+      content: Hobby projects in GTK3, CUDA, OpenCL
+    - name: Go
+      content: I am learning Go
+    - name: MongoDB
+      content: I use Mongo in my hobby projects to learn it
+    - name: Redis
+      content: Cache, queues and message passing
+    - name: Linux
+      content: I work on linux using NeoVim so I never leave terminal! I use NixOS.
+    - name: Bash
+      content: I write a lot of bash scripts to make my life easier.
+    - name: Python
+      content: For more complex scripts I use Python.
+  technologies:
+    - name: Axum
+      content: Rust web framework 
+    - name: Tokio
+      content: Asynchronous programming in Rust
+    - name: SQLx
+      content: Rust database toolkit
+    - name: CUDA
+      content: GPU Programming
+    - name: GTK3
+      content: GUI development in C++
+    - name: ANTLR4
+      content: Generating lexers and parsers 
+contact:
+  html: |
+    <h1>Contact Information</h1>
+    <p>For any inquiries, collaborations, or to discuss potential projects, please feel free to reach out. Your interest in my work is greatly appreciated, and I look forward to the opportunity of working together.</p>
+    <p>Email me directly at <href="mailto:skdziwak@gmail.com">skdziwak@gmail.com</a> for a quick response. I'm always available to discuss new opportunities or provide insights into my work.</p>
+    <p>Alternatively, connect with me on LinkedIn for a more professional engagement. My LinkedIn profile can be accessed <a href="https://www.linkedin.com/in/szymon-dziwak/" target="_blank">here</a> .</p>
+projects:
+  - name: "YamlChain"
+    thumbnail: "/content/projects/yamlchain.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/yamlchain/master/README.md"
+    repo: "https://github.com/skdziwak/yamlchain"
+    technologies: ["Rust", "OpenAI API"]
+  - name: "Micro CI"
+    thumbnail: "/content/projects/microci.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/micro-ci/master/README.md"
+    repo: "https://github.com/skdziwak/micro-ci"
+    technologies: ["Go"]
+  - name: "Rust Data Codegen"
+    thumbnail: "/content/projects/rdc.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/rs-rdc/master/README.md"
+    repo: "https://github.com/skdziwak/rs-rdc"
+    technologies: ["Rust", "Java", "Gradle"]
+  - name: "Factorio Compiler"
+    thumbnail: "/content/projects/factorio-compiler.png"
+    readme: "https://raw.githubusercontent.com/skdziwak/factorio-compiler/master/README.md"
+    repo: "https://github.com/skdziwak/factorio-compiler"
+    technologies: ["Java", "ANTLR"]
+  - name: "Rusty Spaceship"
+    thumbnail: "/content/background.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/rusty-spaceship/master/README.md"
+    repo: "https://github.com/skdziwak/rusty-spaceship"
+    technologies: ["Rust", "Yew"]

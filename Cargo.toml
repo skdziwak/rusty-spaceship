@@ -1,0 +1,25 @@
+[package]
+name = "rusty-spaceship"
+version = "0.1.0"
+edition = "2021"
+description = "My personal portfolio website"
+readme = "README.md"
+repository = "https://github.com/skdziwak/rusty-spaceship"
+license = "MIT"
+keywords = ["yew", "trunk"]
+categories = ["gui", "wasm", "web-programming"]
+
+[dependencies]
+markdown = "0.3.0"
+web-sys = "0.3.65"
+yew = { version="0.21", features=["csr"] }
+yew-router = "0.18.0"
+
+[build-dependencies]
+proc-macro2 = "1.0.69"
+quote = "1.0.33"
+reqwest = "0.11"
+serde = { version = "1.0.192", features = ["derive"] }
+serde_yaml = "0.9.27"
+syn = "2.0.39"
+tokio = { version = "1", features = ["full"] }

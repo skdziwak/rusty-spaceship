@@ -1,0 +1,573 @@
+@charset "UTF-8";
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+main {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.full-screen-background {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Stretch children to take full width */
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/content/background.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative; /* Set to relative for proper stacking */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+.content {
+  flex-grow: 1; /* Take up all available space */
+  padding-top: 20px; /* Space between nav and content */
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Center children horizontally */
+  align-items: center; /* Center children vertically */   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  height: 100%;
+}
+
+.nav-bar {
+    background-color: #1c1c1c;
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Changed to relative */
+    z-index: 10;
+}
+
+.nav-container {
+    width: 90%; /* Give some padding on the sides */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive; /* Example pixel art-style font */
+    font-size: 16px;
+    padding: 10px; /* Add padding for better touch targets */
+    display: block; /* Treat links as block for spacing */
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    color: #4e9af1; /* Highlight color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 14px; /* Smaller font size on small screens */
+        padding: 8px; /* Adjust padding */
+    }
+
+    .nav-container {
+        justify-content: center; /* Center navigation items */
+    }
+}
+
+/* Additional media query for very small screens */
+@media (max-width: 480px) {
+    .nav-bar {
+        height: auto; /* Allow bar height to expand */
+        padding: 10px 0; /* Add some vertical padding */
+    }
+
+    .nav-container {
+        flex-direction: column; /* Stack the links vertically */
+        align-items: center; /* Center align the stacked links */
+    }
+
+    .nav-link {
+        width: 100%; /* Full width links for easier tap targets */
+        text-align: center; /* Center the text within the link */
+        margin-bottom: 5px; /* Add some margin between links */
+    }
+}
+
+.title-container {
+    max-width: 80%; /* Provides padding on the sides */
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent backdrop */
+    border-radius: 10px; /* Soft rounded corners */
+    padding: 20px; /* Add some padding */
+}
+
+.title-container h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 3rem; /* Adjust the size as needed */
+    text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.5rem; /* Space between headline and subheadline */
+}
+
+.title-container h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #4e9af1; /* Adjust color for better visibility */
+    font-size: 1.5rem; /* Smaller than the headline for hierarchy */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.cta-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem; /* Adjust size as needed */
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 0 10px; /* Space between buttons */
+    border: none;
+    border-radius: 5px; /* Adjust border-radius as needed */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#see-work {
+    background-color: #4CAF50; /* Adjust to your preferred color */
+    color: white; /* Text color */
+}
+
+#hire-me {
+    background-color: #555555; /* Adjust to your preferred color */
+    color: white; /* Text color */
+}
+
+.cta-button:hover {
+    background-color: #333333; /* Darker shade on hover */
+}
+
+/* Add responsiveness for buttons if needed */
+@media (max-width: 768px) {
+    .cta-button {
+        font-size: 0.8rem; /* Smaller font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+.content-container {
+    max-width: 80%;
+    padding: 40px;
+    background: rgba(28, 28, 28, 0.85);
+    border-radius: 15px;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
+}
+
+.content-container h1 {
+    color: #4e9af1;
+    margin-bottom: 0.5rem;
+}
+
+.content-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        padding: 20px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Style for the title */
+#grid-tiles-title {
+    font-size: 2rem; /* Adjust the size as needed */
+    color: #4e9af1; /* Example color */
+    text-align: center; /* Center the title */
+    margin-bottom: 1rem; /* Space between the title and the grid */
+    text-transform: uppercase; /* Uppercase styling */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+
+/* Flex container for grid tiles */
+.grid-container {
+    width: 90%; /* Full width */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Flex container for grid tiles */
+.grid-tiles {
+    display: flex;
+    flex-wrap: wrap; /* Allow tiles to wrap to next line */
+    gap: 1rem; /* Spacing between tiles */
+    justify-content: center; /* Center tiles in the container */
+    align-items: stretch; /* Stretch tiles to fill the space */
+    padding: 1rem; /* Padding around the entire grid */
+    width: 100%; /* Full width */
+}
+
+/* Style for each GridTile component */
+.grid-tile {
+    font-family: 'Press Start 2P', cursive; /* Example pixel art-style font */
+    position: relative;
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 4px; /* Example border-radius */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth scale and shadow effect on hover */
+    flex-basis: calc(33.333% - 1rem); /* Three tiles per row minus gap */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Shadow for depth */
+    height: 200px; /* Fixed height for each tile */
+    cursor: pointer;
+}
+
+/* Hover effect for each GridTile component */
+.grid-tile:hover {
+    transform: scale(1.05); /* Slightly enlarge tile on hover */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.3); /* Increase shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .grid-tile {
+        flex-basis: calc(50% - 1rem); /* Two tiles per row minus gap on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-tile {
+        flex-basis: 100%; /* Full width tiles on small screens */
+    }
+}
+
+/* Retain the existing grid-tile hover styles */
+.grid-tile .thumbnail {
+    transition: opacity 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-tile .thumbnail img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.grid-tile .technologies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0,0,0,0.7); /* Semi-transparent background */
+    color: #4e9af1; /* Example color */
+    padding: 10px;
+}
+
+.grid-tile:hover .thumbnail {
+    opacity: 1;
+}
+
+.grid-tile:hover .technologies {
+    opacity: 1;
+}
+
+/* Maintain the style for the title within the GridTile if necessary */
+.grid-tile .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.markdown-container {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    color: #f4f4f4;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 1rem auto;
+    line-height: 1.4;
+    font-size: 1rem;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    width: 70%; /* Adjust width as needed */
+}
+
+/* Ensure that the container adapts to the width of the screen */
+@media (max-width: 1024px) {
+    .markdown-container {
+        max-width: 85%; /* Adjust max-width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .markdown-container {
+        max-width: 80%; /* Adjust max-width for small screens */
+        padding: 0.75rem; /* Smaller padding */
+        font-size: 0.95rem; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .markdown-container {
+        max-width: 75%; /* Further reduce max-width for very small screens */
+        padding: 0.5rem; /* Reduce padding */
+        font-size: 0.9rem; /* Reduce font size */
+    }
+}
+
+/* Adjust heading sizes for a clear hierarchy */
+.markdown-container h1 {
+    font-size: 2rem; /* Largest for main headings */
+    color: #4e9af1; /* Theme color for headings */
+}
+
+.markdown-container h2 {
+    font-size: 1.75rem; /* Medium size for subheadings */
+}
+
+.markdown-container h3 {
+    font-size: 1.5rem; /* Smaller size for sub-subheadings */
+}
+
+/* Styling for links */
+.markdown-container a {
+    color: #ff6347; /* Standout color for links */
+    text-decoration: none; /* No underline by default */
+}
+
+.markdown-container a:hover {
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
+
+/* List styles */
+.markdown-container ul,
+.markdown-container ol {
+    padding-left: 20px; /* Indent lists for clarity */
+}
+
+/* Blockquote styling */
+.markdown-container blockquote {
+    border-left: 4px solid #4e9af1; /* Thematic left border */
+    background-color: rgba(255, 255, 255, 0.1); /* Contrast background */
+    padding: 10px 20px; /* Padding inside blockquotes */
+    margin: 1rem 0; /* Margin around blockquotes */
+    font-style: italic; /* Italicize quotes */
+}
+
+/* Code block styling */
+.markdown-container pre {
+    background-color: #2d2d2d; /* Dark background for code */
+    color: #f8f8f2; /* Light text for readability */
+    padding: 15px; /* Padding around code blocks */
+    border-radius: 6px; /* Rounded corners for style */
+    overflow-x: auto; /* Scroll for overflow */
+}
+
+.markdown-container code {
+    font-family: 'Roboto Mono', monospace; /* Consistent font for code */
+    background-color: #2d2d2d; /* Match pre background */
+    color: #f8f8f2; /* Match pre text color */
+    padding: 3px 6px; /* Padding around inline code */
+    border-radius: 3px; /* Rounded corners for inline code */
+}
+
+/* Table styling */
+.markdown-container table {
+    border-collapse: collapse; /* Clean table look */
+    width: 100%; /* Full width for tables */
+    margin-bottom: 1rem; /* Space after tables */
+}
+
+.markdown-container th,
+.markdown-container td {
+    border-bottom: 1px solid #444; /* Subtle borders for cells */
+    padding: 8px; /* Padding for cell content */
+    text-align: left; /* Left align text in tables */
+}
+
+.markdown-container th {
+    background-color: #333; /* Header background */
+    color: #f4f4f4; /* Header text color */
+}
+
+/* Image responsiveness */
+.markdown-container img {
+    max-width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Block display for centering */
+    margin: 0 auto; /* Center images */
+}
+
+
+/* Intro Section Style */
+.intro-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Section Style */
+.skills-section h2,
+.personal-text h2 {
+    color: #4e9af1;
+    margin-bottom: 1rem;
+}
+
+.skills-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Personal Text Section */
+.personal-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+/* Call to Action Section */
+.cta-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .intro-section p,
+    .personal-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Skills Grid Section */
+.skills-grid-section h2 {
+    color: #4e9af1;
+    margin-bottom: 1rem;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.skill {
+    flex-basis: calc(33% - 1rem); /* Three items per row */
+    background: rgba(28, 28, 28, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.skill h3 {
+    color: #4e9af1;
+    margin-bottom: 0.5rem;
+}
+
+.skill p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .skill {
+        flex-basis: calc(50% - 1rem); /* Two items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        flex-basis: 100%; /* Full width on small screens */
+    }
+}
+
+/* Style for the repo link to look like a button */
+.repo-link {
+    position: absolute; /* Fixed position to keep it at the same place */
+    top: 30px; /* Distance from the top */
+    right: 10px; /* Distance from the right */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+@media (max-width: 768px) {
+  .repo-link {
+    position: relative; /* Change to relative for stacking */
+    top: 0; /* Reset top */
+    right: 0; /* Reset right */
+    margin-bottom: 20px; /* Add some space below the link */
+  }
+}
+
+.repo-link a {
+    display: inline-block; /* Make the link behave like a block element */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from link */
+    font-family: 'Press Start 2P', cursive; /* Font style */
+    font-size: 1rem; /* Font size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.repo-link a:hover {
+    background-color: #333; /* Change background on hover for visual feedback */
+}
