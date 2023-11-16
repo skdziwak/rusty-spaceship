@@ -73,3 +73,8 @@ projects:
     readme: "https://raw.githubusercontent.com/skdziwak/rusty-spaceship/master/README.md"
     repo: "https://github.com/skdziwak/rusty-spaceship"
     technologies: ["Rust", "Yew"]
+  - name: "ts3-telegram bridge"
+    thumbnail: "/content/projects/bridge.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/ts3-telegram-bridge-v2/master/README.md"
+    repo: "https://github.com/skdziwak/ts3-telegram-bridge-v2"
+    technologies: ["Go"]
