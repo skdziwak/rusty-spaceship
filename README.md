@@ -11,7 +11,7 @@ The site features a pixel-art space theme and highlights my projects, skills, an
 - **Framework**: [Yew](https://yew.rs/docs/en/)
 - **Language**: Rust
 - **Styling**: Custom CSS with pixel art aesthetics
-- **Deployment**: I deploy this page on my Ubuntu VPS [Here](https://rusty-spaceship.xyz). I use my own CI/CD tool [MicroCI](https://github.com/skdziwak/micro-ci.git).
+- **Deployment**: I deploy this page on my Ubuntu VPS [Here](https://portfolio.rusty-spaceship.xyz). I use my own CI/CD tool [MicroCI](https://github.com/skdziwak/micro-ci.git).
 
 ## Running the Project Locally
 
