@@ -88,4 +88,9 @@ projects:
     readme: "https://raw.githubusercontent.com/skdziwak/scala-mandelbrot/master/README.md"
     repo: "https://github.com/skdziwak/scala-mandelbrot"
     technologies: ["Rust", "Scala", "C++", "CUDA"]
+  - name: "Laser Works"
+    thumbnail: "/content/projects/laser-works.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/laser-works/master/README.md"
+    repo: "https://github.com/skdziwak/laser-works"
+    technologies: ["C++", "GTK3"]
 
