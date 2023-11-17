@@ -10,6 +10,7 @@ keywords = ["yew", "trunk"]
 categories = ["gui", "wasm", "web-programming"]
 
 [dependencies]
+lazy_static = "1.4.0"
 markdown = "0.3.0"
 web-sys = "0.3.65"
 yew = { version="0.21", features=["csr"] }

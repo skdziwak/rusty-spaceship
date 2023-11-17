@@ -1,9 +1,11 @@
+#[derive(Clone)]
 pub struct Project {
     pub name: &'static str,
     pub thumbnail: &'static str,
     pub readme: &'static str,
     pub technologies: &'static [&'static str],
-    pub repo: Option<&'static str>
+    pub repo: Option<&'static str>,
+    pub path: &'static str,
 }
 
 pub struct Skill {

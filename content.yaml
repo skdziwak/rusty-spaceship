@@ -53,44 +53,53 @@ projects:
     readme: "https://raw.githubusercontent.com/skdziwak/yamlchain/master/README.md"
     repo: "https://github.com/skdziwak/yamlchain"
     technologies: ["Rust", "OpenAI API"]
+    path: yaml-chain
   - name: "Micro CI"
     thumbnail: "/content/projects/microci.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/micro-ci/master/README.md"
     repo: "https://github.com/skdziwak/micro-ci"
     technologies: ["Go"]
+    path: micro-ci
   - name: "Rust Data Codegen"
     thumbnail: "/content/projects/rdc.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/rs-rdc/master/README.md"
     repo: "https://github.com/skdziwak/rs-rdc"
     technologies: ["Rust", "Java", "Gradle"]
+    path: rdc
   - name: "Factorio Compiler"
     thumbnail: "/content/projects/factorio-compiler.png"
     readme: "https://raw.githubusercontent.com/skdziwak/factorio-compiler/master/README.md"
     repo: "https://github.com/skdziwak/factorio-compiler"
     technologies: ["Java", "ANTLR"]
+    path: factorio-compiler
   - name: "Rusty Spaceship"
     thumbnail: "/content/background.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/rusty-spaceship/master/README.md"
     repo: "https://github.com/skdziwak/rusty-spaceship"
     technologies: ["Rust", "Yew"]
+    path: rusty-spaceship
   - name: "ts3-telegram bridge"
     thumbnail: "/content/projects/bridge.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/ts3-telegram-bridge-v2/master/README.md"
     repo: "https://github.com/skdziwak/ts3-telegram-bridge-v2"
     technologies: ["Go"]
+    path: ts3-telegram-bridge
   - name: "rs-init"
     thumbnail: "/content/projects/rs-init.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/rs-init/master/README.md"
     repo: "https://github.com/skdziwak/rs-init"
     technologies: ["Rust", "Procedural Macros"]
+    path: rs-init
   - name: "Mandelbrot GPU Rendering"
     thumbnail: "/content/projects/scala-mandelbrot.jpg"
     readme: "https://raw.githubusercontent.com/skdziwak/scala-mandelbrot/master/README.md"
     repo: "https://github.com/skdziwak/scala-mandelbrot"
     technologies: ["Rust", "Scala", "C++", "CUDA"]
+    path: scala-mandelbrot
   - name: "Laser Works"
     thumbnail: "/content/projects/laser-works.webp"
     readme: "https://raw.githubusercontent.com/skdziwak/laser-works/master/README.md"
     repo: "https://github.com/skdziwak/laser-works"
     technologies: ["C++", "GTK3"]
+    path: laser-works
 

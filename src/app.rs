@@ -12,7 +12,7 @@ fn switch(state: Route) -> Html {
         Route::About => html! { <AboutView /> },
         Route::Projects => html! { <ProjectsView /> },
         Route::Contact => html! { <ContactView /> },
-        Route::Readme { id } => html! { <ReadmeView project_id={id} /> },
+        Route::Readme { path } => html! { <ReadmeView project_path={path.clone()} /> },
     }
 }
 

@@ -11,6 +11,7 @@ pub struct Project {
     pub readme: String,
     pub technologies: Vec<String>,
     pub repo: Option<String>,
+    pub path: String,
 }
 
 #[derive(Debug, Deserialize)]
@@ -69,6 +70,7 @@ async fn main() -> Result<(), reqwest::Error> {
             Some(repo) => quote::quote!{Some(#repo)},
             None => quote::quote!{None},
         };
+        let path = &project.path;
         
         projects.push(quote::quote!{
             Project {
@@ -77,6 +79,7 @@ async fn main() -> Result<(), reqwest::Error> {
                 readme: #readme,
                 technologies: &[#(#technologies),*],
                 repo: #repo,
+                path: #path,
             }
         });
     }

@@ -17,10 +17,8 @@ pub enum Route {
     Projects,
     #[at("/contact")]
     Contact,
-    #[at("/projects/:id")]
-    Readme { id: ProjectId },
+    #[at("/projects/:path")]
+    Readme { path: String },
 }
-
-type ProjectId = usize;
 
 

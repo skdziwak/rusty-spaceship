@@ -1,20 +1,29 @@
 #![allow(non_camel_case_types)]
 use yew::prelude::*;
 
-use super::ProjectId;
 use crate::app::components::markdown::MarkdownRenderer;
 use crate::app::components::page::Page;
-use crate::data::PROJECTS;
+use crate::app::views::main::MainView;
+use crate::data::PROJECTS_MAP;
 
 #[derive(Properties, PartialEq)]
 pub struct ReadmeProperties {
-    pub project_id: ProjectId,
+    pub project_path: String,
 }
 
 #[function_component]
 pub fn ReadmeView(props: &ReadmeProperties) -> Html {
-    let readme = PROJECTS[props.project_id].readme.to_string();
-    let repo_html = match PROJECTS[props.project_id].repo {
+    let project = PROJECTS_MAP.get(&props.project_path);
+    let project = match project {
+        Some(readme) => readme,
+        None => {
+            return html! {
+                <MainView />
+            }
+        },
+    };
+    let readme = project.readme.to_string();
+    let repo_html = match project.repo {
         Some(link) => html! {
             <div class="repo-link">
                 <a href={link} target="_blank" rel="noopener noreferrer">
