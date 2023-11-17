@@ -83,3 +83,9 @@ projects:
     readme: "https://raw.githubusercontent.com/skdziwak/rs-init/master/README.md"
     repo: "https://github.com/skdziwak/rs-init"
     technologies: ["Rust", "Procedural Macros"]
+  - name: "Mandelbrot GPU Rendering"
+    thumbnail: "/content/projects/scala-mandelbrot.jpg"
+    readme: "https://raw.githubusercontent.com/skdziwak/scala-mandelbrot/master/README.md"
+    repo: "https://github.com/skdziwak/scala-mandelbrot"
+    technologies: ["Rust", "Scala", "C++", "CUDA"]
+
