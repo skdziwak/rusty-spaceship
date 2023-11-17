@@ -78,3 +78,8 @@ projects:
     readme: "https://raw.githubusercontent.com/skdziwak/ts3-telegram-bridge-v2/master/README.md"
     repo: "https://github.com/skdziwak/ts3-telegram-bridge-v2"
     technologies: ["Go"]
+  - name: "rs-init"
+    thumbnail: "/content/projects/rs-init.webp"
+    readme: "https://raw.githubusercontent.com/skdziwak/rs-init/master/README.md"
+    repo: "https://github.com/skdziwak/rs-init"
+    technologies: ["Rust", "Procedural Macros"]
