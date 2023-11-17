@@ -332,13 +332,13 @@ main {
 /* Ensure that the container adapts to the width of the screen */
 @media (max-width: 1024px) {
     .markdown-container {
-        max-width: 85%; /* Adjust max-width for medium screens */
+        width: 95%; /* Adjust max-width for medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .markdown-container {
-        max-width: 80%; /* Adjust max-width for small screens */
+        width: 95%; /* Adjust max-width for small screens */
         padding: 0.75rem; /* Smaller padding */
         font-size: 0.95rem; /* Slightly smaller font size */
     }
@@ -346,7 +346,7 @@ main {
 
 @media (max-width: 480px) {
     .markdown-container {
-        max-width: 75%; /* Further reduce max-width for very small screens */
+        width: 95%; /* Further reduce max-width for very small screens */
         padding: 0.5rem; /* Reduce padding */
         font-size: 0.9rem; /* Reduce font size */
     }
