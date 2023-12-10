@@ -19,7 +19,7 @@ pub fn MainView() -> Html {
         <Page>
             <div class="title-container">
                 <h1>{"rusty spaceship"}</h1>
-                <h2>{"Rust, Go and C++ portfolio of Szymon Dziwak"}</h2>
+                <h2>{"Rust and Go portfolio of Szymon Dziwak"}</h2>
                 <div class="button-container">
                     <button class="cta-button" id="see-work" onclick={go_projects}>{"See My Work"}</button>
                     <button class="cta-button" id="hire-me" onclick={go_contact}>{"Hire Me"}</button>
