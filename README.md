@@ -4,7 +4,7 @@ This repository contains the source code for my personal portfolio website showc
 
 ## Overview
 
-The site features a pixel-art space theme and highlights my projects, skills, and professional background. Visitors can learn about my programming experience, view my projects and contact me through various platforms.
+The site features a pixel-art space theme and highlights my projects, and skills. Visitors can learn about my programming experience, view my projects and contact me through various platforms.
 
 ## Technology Stack
 
